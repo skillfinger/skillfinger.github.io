@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>SkillFinger</title>
+    <style>
+      html {
+        /* 1. Рисуем черные рамки по бокам */
+        box-shadow: inset 200px 0 0 0 #002a2a, inset -200px 0 0 0 #002a2a;
+
+        /* 2. Делаем такие же отступы, чтобы текст не заходил на рамки */
+        padding-left: 300px;
+        padding-right: 300px;
+
+        /* 3. Важно: считаем размеры правильно, чтобы не появилось скролла */
+        box-sizing: border-box;
+
+        /* 4. Растягиваем на всю высоту */
+        min-height: 100vh;
+      }
+
+      body {
+        margin: 0; /* Убираем стандартные отступы браузера */
+      }
+    </style>
   </head>
   <body style="background-color: #ffffdc">
     <h1
@@ -30,7 +50,7 @@
     <p
       style="text-align: left; font-family: Arial, sans-serif; font-size: 16px"
     >
-      At SkillFinger, we try to make the world
+      At SkillFinger, we are trying to make the world
     </p>
     <p
       style="text-align: left; font-family: Arial, sans-serif; font-size: 16px"
@@ -52,5 +72,34 @@
     >
       so your attention is very important to us!
     </p>
+    <div style="display: grid; grid-auto-flow: column; align-items: baseline">
+      <h3
+        style="
+          text-align: left;
+          font-family: Arial, sans-serif;
+          font-size: 24px;
+        "
+      >
+        <a href="" style="color: #46b9e6">Art</a>
+      </h3>
+      <h3
+        style="
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 24px;
+        "
+      >
+        <a href="" style="color: #46b9e6">Music</a>
+      </h3>
+      <h3
+        style="
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 24px;
+        "
+      >
+        <a href="" style="color: #46b9e6">Games</a>
+      </h3>
+    </div>
   </body>
 </html>
